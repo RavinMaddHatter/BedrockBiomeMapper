@@ -1,0 +1,44 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Biome Finder V1",
+    "description": "Biomes are Mapped automatically to a block map when a control stick is used. use a stick named help for more info",
+    "uuid": "393bf41c-19e7-4fc9-81cb-59c8d00cbf63",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "uuid": "4f59811c-6ab0-4064-8343-bf90bb2f82d3",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/BiomeMaper.js"
+    }
+  ],
+  "capabilities": [
+    "script_eval"
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.7.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0"
+    }
+  ]
+}
