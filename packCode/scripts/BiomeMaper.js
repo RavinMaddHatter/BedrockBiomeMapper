@@ -21,8 +21,8 @@ function mapBiomes(){
 		let itemName = PlayerMaping.getComponent("minecraft:equippable").getEquipmentSlot("Mainhand").typeId
 		itemName=itemName.replace("minecraft:","")
 		if(itemName != "stick"){
-			PlayerMaping.runCommand("setblock ~~-1~ "+ biomeBlockFinder(PlayerMaping))
 			PlayerMaping.runCommand(voidCommand)
+			PlayerMaping.runCommand("setblock ~~-1~ "+ biomeBlockFinder(PlayerMaping))
 			curX+=1
 			if(curX>=maxX){
 				curX=startX
